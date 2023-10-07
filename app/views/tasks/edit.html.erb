@@ -1,0 +1,7 @@
+<h2>Edit your task</h2>
+  <% @tasks.each do |task| %>
+  <%= f.label :title, "Your title" %>
+  <%= f.text_field :details %>
+  <%= f.text_field :completed %>
+  <%= f.submit "Update Profile" %>
+<% end %>
